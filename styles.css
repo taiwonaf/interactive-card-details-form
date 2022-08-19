@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --Linear-gradient-active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red-input-errors: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Cards */
+
+.cards {
+    background-image: url('./images/bg-main-mobile.png');
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 35px 15px 45px 15px;
+    position: relative;
+}
+
+.back-card {
+    position: relative;
+    justify-self: flex-end;
+}
+
+.cvc {
+    position: absolute;
+    top: 66px;
+    right: 35px;
+    color: var(--Light-grayish-violet);
+}
+
+.front-card {
+    position: absolute;
+    left: 15px;
+    bottom: -45px;
+}
+
+.front-card-content {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: var(--Light-grayish-violet);
+    bottom: 0;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-number {
+    word-spacing: 22.5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cards img {
+    max-width: 285px;
+    width: 100%;
+}
+
+/* form */
+
+form {
+    padding: 90px 25px 45px 25px;
+    width: 100%;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-input label {
+    width: 100%;
+    margin-bottom: 10px;
+    color: var(--Very-dark-violet);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 2px solid var(--Light-grayish-violet);
+    font-weight: 500;
+}
+
+input::placeholder {
+    color: var(--Light-grayish-violet);
+    font-weight: 500;
+}
+
+/* Form date */
+
+.form-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form-date input {
+    max-width: 48%;
+    width: 100%;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form-bottom > div {
+    width: 100%;
+    max-width: 48%;
+}
