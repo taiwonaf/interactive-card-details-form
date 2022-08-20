@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <div class="contianer">
+  <div class="container">
     <div class="cards">
       <div class="back-card">
         <img src="./images/bg-card-back.png" alt="">
@@ -36,29 +36,34 @@
         </div>
       </div>
     </div>
-    <form action="#">
-      <div class="form-input">
-        <label for="name" >Cardholder Name</label>
-        <input type="text" placeholder="e.g. Jane Appleseed">
-      </div>
-      <div class="form-input">
-        <label for="card-number" >Card Number</label>
-        <input type="number" placeholder="e.g. 1234 5678 9123 0000">
-      </div>
-      <div class="form-bottom">
+    <div class="form-container">
+      <form action="#">
         <div class="form-input">
-          <label for="card-date">Exp. Date (MM/YY)</label>
-          <div class="form-date">
-            <input type="number" placeholder="MM">
-            <input type="number" placeholder="YY">
+          <label for="name" >Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed">
+        </div>
+        <div class="form-input">
+          <label for="card-number" >Card Number</label>
+          <input type="number" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+        <div class="form-bottom">
+          <div class="form-input">
+            <label for="card-date">Exp. Date (MM/YY)</label>
+            <div class="form-date">
+              <input type="number" placeholder="MM">
+              <input type="number" placeholder="YY">
+            </div>
+          </div>
+          <div class="form-input">
+            <label for="cvc">CVC</label>
+            <input type="number" placeholder="e.g. 123">
           </div>
         </div>
         <div class="form-input">
-          <label for="cvc">CVC</label>
-          <input type="number" placeholder="e.g. 123">
+          <input type="submit" value="Confirm">
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
   <!-- Completed state start -->
 <!-- 
@@ -68,7 +73,7 @@
    -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://twitter.com/tee_script">Nafiu Taiwo</a>.
   </div>
 </body>
 </html>
