@@ -13,6 +13,48 @@ const cvcOut = document.getElementById("cvc-out");
 
 function handleSubmit(event) {
     event.preventDefault();
+
+    if (!fname.value) {
+        let errorId = fname.nextElementSibling.id;
+        const error = document.getElementById(errorId);
+        error.textContent = "Name cannot be empty";
+        console.log("fname testing")
+    } else {
+        error.textContent = "";
+        console.log("Fname testing confirmation")
+    }
+
+    if (!cardNumber.value) {
+        let errorId = cardNumber.nextElementSibling.id;
+        const error = document.getElementById(errorId);
+        error.textContent = "Name cannot be empty";
+    } else {
+        error.textContent = "";
+    }
+
+    if (!month.value) {
+        let errorId = month.nextElementSibling.id;
+        const error = document.getElementById(errorId);
+        error.textContent = "Name cannot be empty";
+    } else {
+        error.textContent = "";
+    }
+
+    if (!year.value) {
+        let errorId = year.nextElementSibling.id;
+        const error = document.getElementById(errorId);
+        error.textContent = "Name cannot be empty";
+    } else {
+        error.textContent = "";
+    }
+
+    if (!cvc.value) {
+        let errorId = cvc.nextElementSibling.id;
+        const error = document.getElementById(errorId);
+        error.textContent = "Name cannot be empty";
+    } else {
+        error.textContent = "";
+    }
     
 }
 

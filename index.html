@@ -46,18 +46,22 @@
         <div class="form-input">
           <label for="card-number" >Card Number</label>
           <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="cardNumber" maxlength="16">
+          <div id="error"></div>
         </div>
         <div class="form-bottom">
           <div class="form-input">
             <label for="card-date">Exp. Date (MM/YY)</label>
             <div class="form-date">
               <input type="number" placeholder="MM" id="month" maxlength="2">
+              <div id="error"></div>
               <input type="number" placeholder="YY" id="year" maxlength="2">
+              <div id="error"></div>
             </div>
           </div>
           <div class="form-input">
             <label for="cvc">CVC</label>
             <input type="number" placeholder="e.g. 123" id="cvc" maxlength="3">
+            <div id="error"></div>
           </div>
         </div>
         <div class="form-input">
