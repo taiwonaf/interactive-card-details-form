@@ -20,47 +20,48 @@
     <div class="cards">
       <div class="back-card">
         <img src="./images/bg-card-back.png" alt="">
-        <div class="cvc">000</div>
+        <div class="cvc" id="cvc-out">000</div>
       </div>
       <div class="front-card">
         <img src="./images/bg-card-front.png" alt="">
         <div class="front-card-content">
-          <div class="card-number">0000 0000 0000 0000</div>
+          <div class="card-number" id="cardNumber-out">0000 0000 0000 0000</div>
           <div class="card-details">
-            <div class="card-name">Jane Appleseed</div>
+            <div class="card-name" id="name-out">Jane Appleseed</div>
             <div class="card-date">
-              <span id="month">00</span>/
-              <span id="year">00</span>
+              <span id="month-out">00</span>/
+              <span id="year-out">00</span>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="form-container">
-      <form action="#">
+      <form action="#" id="form" onsubmit="handleSubmit(event)" >
         <div class="form-input">
           <label for="name" >Cardholder Name</label>
-          <input type="text" placeholder="e.g. Jane Appleseed">
+          <input type="text" placeholder="e.g. Jane Appleseed" id="fname">
+          <div id="error"></div>
         </div>
         <div class="form-input">
           <label for="card-number" >Card Number</label>
-          <input type="number" placeholder="e.g. 1234 5678 9123 0000">
+          <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="cardNumber" maxlength="16">
         </div>
         <div class="form-bottom">
           <div class="form-input">
             <label for="card-date">Exp. Date (MM/YY)</label>
             <div class="form-date">
-              <input type="number" placeholder="MM">
-              <input type="number" placeholder="YY">
+              <input type="number" placeholder="MM" id="month" maxlength="2">
+              <input type="number" placeholder="YY" id="year" maxlength="2">
             </div>
           </div>
           <div class="form-input">
             <label for="cvc">CVC</label>
-            <input type="number" placeholder="e.g. 123">
+            <input type="number" placeholder="e.g. 123" id="cvc" maxlength="3">
           </div>
         </div>
         <div class="form-input">
-          <input type="submit" value="Confirm">
+          <input type="submit" value="Confirm" id="submit">
         </div>
       </form>
     </div>
@@ -75,5 +76,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://twitter.com/tee_script">Nafiu Taiwo</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>

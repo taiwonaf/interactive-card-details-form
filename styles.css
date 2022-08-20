@@ -154,6 +154,11 @@ input[type=submit] {
     max-width: 48%;
 }
 
+#error {
+    color: red;
+    font-size: 12px;
+}
+
 /* ###### Media Breakpoint 375px ######## */
 
 @media (min-width: 1024px) {
@@ -222,5 +227,9 @@ input[type=submit] {
 
     .card-number {
         word-spacing: 1.4vw;
+    }
+
+    .attribution {
+        font-size: 18px;
     }
 }
